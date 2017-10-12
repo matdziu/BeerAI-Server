@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 bottleneck_features_extractor, model, graph = init()
 
-to_predict_path = "/Users/mateuszdziubek/Desktop/BeerAI-Server"
+to_predict_path = "/Users/mateuszdziubek/Desktop/BeerAI-Server/to_predict"
 to_predict_name = "image_to_predict.jpg"
 
 
