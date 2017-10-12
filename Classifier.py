@@ -1,7 +1,9 @@
 import numpy as np
 
-output_beer_labels = ['Harnaś', 'Kasztelan Niepasteryzowany', 'Kasztelan Pszeniczny', 'Miłosław Witbier (niebieski)',
-                      'Perła Chmielowa', 'Perła Export', 'Somersby', 'Warka', 'Wojak', 'Żywiec Biały']
+PROJECT_PATH = "/Users/mateuszdziubek/Desktop/BeerAI-Server"
+
+labels_file = open(f"{PROJECT_PATH}/labels.txt", "r")
+output_beer_labels = labels_file.read().split('\n')
 
 
 def classify(prediction_encoded):

@@ -7,11 +7,13 @@ from keras.preprocessing.image import load_img, img_to_array
 from Classifier import classify
 from Initializer import init
 
+PROJECT_PATH = "/Users/mateuszdziubek/Desktop/BeerAI-Server"
+
 app = Flask(__name__)
 
 bottleneck_features_extractor, model, graph = init()
 
-to_predict_path = "/Users/mateuszdziubek/Desktop/BeerAI-Server/to_predict"
+to_predict_path = f"{PROJECT_PATH}/to_predict"
 to_predict_name = "image_to_predict.jpg"
 
 
